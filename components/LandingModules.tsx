@@ -51,12 +51,13 @@ export const HeroSection: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="max-w-2xl">
             <h1 className="text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
-              Get Qualified Property Buyers & Investors in Dubai — On Autopilot
+              Get 12 to 35 Qualified Property Leads Every Week <br /> With a
+              Guaranteed 30-Day Performance Ramp-Up
             </h1>
             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-              We help Dubai real estate companies generate verified leads,
-              booked appointments, and closed deals using a data-driven
-              performance marketing system.
+              We help Dubai real estate firms book verified buyers and investors
+              using a tested performance marketing system built for high-ticket
+              property sales.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
@@ -66,7 +67,6 @@ export const HeroSection: React.FC = () => {
                 className="group"
               >
                 Book a Strategy Call
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button
                 variant="whatsapp"
@@ -147,21 +147,30 @@ export const ProblemSection: React.FC = () => {
   const problems = [
     {
       title: "Unqualified leads wasting sales times",
-      desc: "Wrong targeting and poor keywords lead to low quality inquiries that never convert.",
+      desc: "Most agencies push generic traffic that leads to low-intent prospects who never convert. Your team ends up wasting hours on people who aren’t financially ready or serious.",
       items: [
-        "Ads not optimized for intent",
-        "Time wasted calling unqualified leads",
+        "Poor targeting leads to irrelevant enquiries",
+        "No pre-qualification filters",
+        "Time wasted on non-buyers",
       ],
     },
     {
       title: "Low booking & show-up rates",
-      desc: "Sending traffic directly to a generic homepage confuses patients and kills conversion rates.",
-      items: ["No treatment-specific flow", "High bounce rates"],
+      desc: "Sending leads to a basic WhatsApp or “contact us” form kills conversions instantly. Buyers drop off because the journey isn’t personalised or structured.",
+      items: [
+        "No funnel built for high-ticket real estate",
+        "High drop-off before site visits",
+        "Low engagement from buyers",
+      ],
     },
     {
       title: "Poor tracking, no clear ROI",
-      desc: "Staff replies too slowly or manual follow-ups get missed in the busy clinic schedule.",
-      items: ["No automation", "Lost leads due to delay"],
+      desc: "Most real estate teams don’t actually know which ads bring closable buyers. Without tracking, decisions become guesswork and budgets leak.",
+      items: [
+        "No automation to follow up instantly",
+        "Missed leads due to delayed responses",
+        "No insight into which campaigns drive actual sales",
+      ],
     },
   ];
 
@@ -220,10 +229,11 @@ export const SolutionSection: React.FC = () => {
             The Solution
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-2 mb-4">
-            The Adsmagnify Appointment Engine™
+            The Adsmagnify Buyer Engine
           </h2>
           <p className="text-slate-600">
-            A predictable system built specifically for aesthetic clinics.
+            A predictable system built specifically for Dubai real estate teams
+            to generate serious property buyers, not just leads.
           </p>
         </div>
 
@@ -239,8 +249,8 @@ export const SolutionSection: React.FC = () => {
             <ul className="space-y-3 mb-6 flex-1">
               {[
                 "High-intent Google Ads",
-                "Targeted Meta Ads",
-                "Treatment-specific targeting",
+                "Hyper-targeted Meta Ads",
+                "Project-specific and budget-specific targeting",
               ].map((item, i) => (
                 <li key={i} className="flex items-center text-slate-700">
                   <Check className="w-5 h-5 text-brand-600 mr-3 flex-shrink-0" />
@@ -258,9 +268,9 @@ export const SolutionSection: React.FC = () => {
             <h3 className="text-xl font-bold mb-4">2. Conversion Machine</h3>
             <ul className="space-y-3 mb-6 flex-1">
               {[
-                "3 Landing Pages (Acne, Pigmentation, Laser)",
-                "WhatsApp Auto-Follow-Up",
-                "Lead Qualification",
+                "3 high-converting landing pages(Off-plan, Ready Properties, Leads for Agents)",
+                "Automated Email Follow-ups",
+                "Lead qualification system before reaching your sales team",
               ].map((item, i) => (
                 <li key={i} className="flex items-center text-slate-300">
                   <Check className="w-5 h-5 text-brand-400 mr-3 flex-shrink-0" />
@@ -280,9 +290,9 @@ export const SolutionSection: React.FC = () => {
             </h3>
             <ul className="space-y-3 mb-6 flex-1">
               {[
-                "Calendar booking setup",
-                "Automated reminders",
-                "Lead → Appointment flow",
+                "Calendar booking setup for property viewings or discovery calls",
+                "Automated reminders via Email",
+                "Lead → Appointment → Viewing flow optimization",
               ].map((item, i) => (
                 <li key={i} className="flex items-center text-slate-700">
                   <Check className="w-5 h-5 text-brand-600 mr-3 flex-shrink-0" />
@@ -319,7 +329,7 @@ export const ValueStack: React.FC = () => {
                   "Google Search + Display",
                   "Meta Ads",
                   "YouTube Discovery",
-                  "WhatsApp lead gen",
+                  "Email lead generation",
                   "Retargeting engine",
                 ].map((item, i) => (
                   <li
@@ -533,65 +543,6 @@ export const ProofSection: React.FC = () => {
   );
 };
 
-// --- ROI Calculator ---
-export const ROICalculator: React.FC = () => {
-  return (
-    <section className="py-20 bg-slate-50">
-      <div className="container mx-auto px-4 max-w-4xl">
-        <h2 className="text-3xl font-bold text-center text-slate-900 mb-8">
-          Your Clinic’s Return on Investment
-        </h2>
-        <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-          <div className="overflow-x-auto">
-            <table className="w-full text-left border-collapse">
-              <thead>
-                <tr className="bg-slate-100 border-b border-slate-200">
-                  <th className="p-4 font-bold text-slate-700">Treatment</th>
-                  <th className="p-4 font-bold text-slate-700">Avg Ticket</th>
-                  <th className="p-4 font-bold text-slate-700 text-right">
-                    30 Appointments
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-100">
-                <tr>
-                  <td className="p-4 text-slate-900 font-medium">Acne</td>
-                  <td className="p-4 text-slate-600">₹3k–₹6k</td>
-                  <td className="p-4 text-right font-bold text-brand-600">
-                    ₹90k–₹1.8L
-                  </td>
-                </tr>
-                <tr>
-                  <td className="p-4 text-slate-900 font-medium">
-                    Pigmentation
-                  </td>
-                  <td className="p-4 text-slate-600">₹4k–₹10k</td>
-                  <td className="p-4 text-right font-bold text-brand-600">
-                    ₹1.2L–₹3L
-                  </td>
-                </tr>
-                <tr className="bg-brand-50/50">
-                  <td className="p-4 text-slate-900 font-medium">Laser</td>
-                  <td className="p-4 text-slate-600">₹1.5k–₹15k</td>
-                  <td className="p-4 text-right font-bold text-brand-600">
-                    ₹45k–₹4.5L
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div className="p-6 bg-slate-50 text-center border-t border-slate-200">
-            <p className="text-slate-700 font-medium">
-              "Even with 20–30 appointments/month, clinics see{" "}
-              <span className="text-brand-600 font-bold">4–10X ROI</span>."
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
 // --- Pricing & Guarantee ---
 export const PricingGuarantee: React.FC = () => {
   const navigate = useNavigate();
@@ -656,16 +607,16 @@ export const AboutAndFinal: React.FC = () => {
       <section className="py-20 bg-slate-50">
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl font-bold text-slate-900 mb-10 text-center">
-            Why Clinics Choose Adsmagnify
+            Why Real Estate Companies in Dubai Choose Adsmagnify
           </h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {[
-              "Niche-specialized agency",
-              "Appointment-focused system",
-              "Transparent reporting",
-              "Proven results",
-              "No staff dependency",
-              "Medical-grade funnels",
+              "Niche-Specialized Real Estate Marketing",
+              "Transparent Reporting",
+              "No Staff Dependency",
+              "Appointment-Focused System",
+              "Proven Results",
+              "Sales-Grade funnels",
             ].map((item, i) => (
               <div
                 key={i}
