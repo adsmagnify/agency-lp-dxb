@@ -50,17 +50,13 @@ export const HeroSection: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center px-3 py-1 rounded-full bg-brand-100 text-brand-700 text-sm font-medium mb-6">
-              <span className="flex h-2 w-2 rounded-full bg-brand-600 mr-2"></span>
-              For Aesthetic Clinics Only
-            </div>
             <h1 className="text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
-              Get <span className="text-brand-600">30–90 New Patient</span>{" "}
-              Appointments Every Month for Acne, Pigmentation & Laser Treatments
+              Get Qualified Property Buyers & Investors in Dubai — On Autopilot
             </h1>
             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-              A fully done-for-you appointment system for aesthetic clinics.
-              Google Ads + Meta Ads + Landing Pages + WhatsApp Automation.
+              We help Dubai real estate companies generate verified leads,
+              booked appointments, and closed deals using a data-driven
+              performance marketing system.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
@@ -69,7 +65,7 @@ export const HeroSection: React.FC = () => {
                 onClick={() => navigate("/session")}
                 className="group"
               >
-                Book a Free Strategy Session
+                Book a Strategy Call
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button
@@ -78,14 +74,9 @@ export const HeroSection: React.FC = () => {
                 className="flex items-center"
                 onClick={() => window.open("https://wa.me/", "_blank")}
               >
-                <WhatsAppIcon className="mr-2 h-5 w-5" />
-                Message on WhatsApp
+                See case studies
               </Button>
             </div>
-            <p className="mt-4 text-sm text-slate-500 flex items-center">
-              <span className="inline-block w-2 h-2 rounded-full bg-green-500 mr-2"></span>
-              Spots for this month are filling fast.
-            </p>
           </div>
           <div className="relative">
             <div className="absolute inset-0 bg-brand-600 rounded-3xl rotate-3 opacity-10 blur-xl"></div>
@@ -94,20 +85,6 @@ export const HeroSection: React.FC = () => {
               alt="Doctor consulting patient"
               className="relative rounded-3xl shadow-2xl w-full object-cover h-[500px] border-4 border-white"
             />
-            {/* Float Element */}
-            <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg border border-slate-100 hidden md:block">
-              <div className="flex items-center gap-3">
-                <div className="bg-green-100 p-2 rounded-full">
-                  <TrendingUp className="h-6 w-6 text-green-600" />
-                </div>
-                <div>
-                  <p className="text-sm text-slate-500">Monthly Growth</p>
-                  <p className="text-xl font-bold text-slate-900">
-                    +45 New Patients
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -121,7 +98,8 @@ export const TrustBar: React.FC = () => {
     <div className="bg-white border-y border-slate-100 py-8">
       <div className="container mx-auto px-4">
         <p className="text-center text-sm font-semibold text-slate-400 uppercase tracking-wider mb-8">
-          Trusted by Clinics Across India
+          Trusted by real estate developers, brokers & property consultancies
+          across Dubai & GCC.
         </p>
         <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
           <img
@@ -168,7 +146,7 @@ export const TrustBar: React.FC = () => {
 export const ProblemSection: React.FC = () => {
   const problems = [
     {
-      title: "Junk Leads",
+      title: "Unqualified leads wasting sales times",
       desc: "Wrong targeting and poor keywords lead to low quality inquiries that never convert.",
       items: [
         "Ads not optimized for intent",
@@ -176,12 +154,12 @@ export const ProblemSection: React.FC = () => {
       ],
     },
     {
-      title: "No Landing Page",
+      title: "Low booking & show-up rates",
       desc: "Sending traffic directly to a generic homepage confuses patients and kills conversion rates.",
       items: ["No treatment-specific flow", "High bounce rates"],
     },
     {
-      title: "Weak Follow-Up",
+      title: "Poor tracking, no clear ROI",
       desc: "Staff replies too slowly or manual follow-ups get missed in the busy clinic schedule.",
       items: ["No automation", "Lost leads due to delay"],
     },
@@ -192,11 +170,11 @@ export const ProblemSection: React.FC = () => {
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-slate-900 mb-4">
-            Why Most Clinics Struggle to Get Appointments
+            THE DUBAI PROPERTY MARKET HAS CHANGED
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto">
-            The traditional agency model is broken. Here is why you are burning
-            money on ads without seeing patients in the clinic.
+            Today’s real estate companies don’t need more leads. They need
+            qualified buyers who can close.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
@@ -321,11 +299,12 @@ export const SolutionSection: React.FC = () => {
 
 // --- Value Stack ---
 export const ValueStack: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <section className="py-20 bg-slate-50">
       <div className="container mx-auto px-4 max-w-5xl">
         <h2 className="text-3xl font-bold text-center text-slate-900 mb-12">
-          What You Get (Done For You)
+          Services
         </h2>
         <div className="bg-white rounded-3xl shadow-lg border border-slate-200 overflow-hidden">
           <div className="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-slate-100">
@@ -333,14 +312,15 @@ export const ValueStack: React.FC = () => {
             <div className="p-8">
               <h4 className="font-bold text-slate-900 mb-6 flex items-center">
                 <Users className="w-5 h-5 mr-2 text-brand-600" />
-                Ads Management
+                Performance Marketing
               </h4>
               <ul className="space-y-4">
                 {[
-                  "Google Ads",
+                  "Google Search + Display",
                   "Meta Ads",
-                  "Keyword Strategy",
-                  "Daily Optimization",
+                  "YouTube Discovery",
+                  "WhatsApp lead gen",
+                  "Retargeting engine",
                 ].map((item, i) => (
                   <li
                     key={i}
@@ -356,14 +336,15 @@ export const ValueStack: React.FC = () => {
             <div className="p-8 bg-brand-50/30">
               <h4 className="font-bold text-slate-900 mb-6 flex items-center">
                 <Clock className="w-5 h-5 mr-2 text-brand-600" />
-                Conversion System
+                Creative Production
               </h4>
               <ul className="space-y-4">
                 {[
-                  "Treatment Landing Pages",
-                  "WhatsApp Automation",
-                  "Appointment Funnel",
-                  "Tracking & Analytics",
+                  "High-end property creatives",
+                  "Video ads",
+                  "UGC-style walkthroughs",
+                  "A/B testing hooks",
+                  "Developer-specific campaigns",
                 ].map((item, i) => (
                   <li
                     key={i}
@@ -379,14 +360,15 @@ export const ValueStack: React.FC = () => {
             <div className="p-8">
               <h4 className="font-bold text-slate-900 mb-6 flex items-center">
                 <ShieldCheck className="w-5 h-5 mr-2 text-brand-600" />
-                Reporting & Support
+                Conversion & Tracking
               </h4>
               <ul className="space-y-4">
                 {[
-                  "Weekly Reports",
-                  "Monthly Strategy Calls",
-                  "Lead Quality Check",
-                  "Dedicated Manager",
+                  "CRM setup (HubSpot / Zoho / Propertybase)",
+                  "Automated follow-ups",
+                  "Appointment reminders",
+                  "Call-tracking",
+                  "Sales pipeline setup",
                 ].map((item, i) => (
                   <li
                     key={i}
@@ -399,6 +381,16 @@ export const ValueStack: React.FC = () => {
               </ul>
             </div>
           </div>
+        </div>
+        <div className="mt-12 text-center">
+          <Button
+            variant="primary"
+            size="lg"
+            onClick={() => navigate("/session")}
+            className="group"
+          >
+            Let's Discuss Your Project
+          </Button>
         </div>
       </div>
     </section>
