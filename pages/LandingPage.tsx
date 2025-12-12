@@ -1,10 +1,15 @@
-import React from 'react';
-import { 
-  HeroSection, TrustBar, ProblemSection, SolutionSection, 
-  ValueStack, ProofSection, ROICalculator, PricingGuarantee, 
-  AboutAndFinal 
-} from '../components/LandingModules';
-import { Footer } from '../components/Footer';
+import React from "react";
+import {
+  HeroSection,
+  TrustBar,
+  ProblemSection,
+  SolutionSection,
+  ValueStack,
+  ProofSection,
+  PricingGuarantee,
+  AboutAndFinal,
+} from "../components/LandingModules";
+import { Footer } from "../components/Footer";
 
 const LandingPage: React.FC = () => {
   return (
@@ -15,7 +20,6 @@ const LandingPage: React.FC = () => {
       <SolutionSection />
       <ValueStack />
       <ProofSection />
-      <ROICalculator />
       <PricingGuarantee />
       <AboutAndFinal />
       <Footer />
