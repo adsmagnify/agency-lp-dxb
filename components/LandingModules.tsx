@@ -429,7 +429,7 @@ export const ProofSection: React.FC = () => {
       problem:
         "The developer’s Google Ads setup was driving high traffic but almost no conversions. Campaigns lacked keyword segmentation, attracted unqualified enquiries, and pushed no warm traffic toward conversion. With rising costs and no reliable acquisition system, the sales team was overwhelmed with low-intent leads.",
       mechanism:
-        "We rebuilt the entire Google Ads engine from scratch. Campaigns were segmented into high-intent, location-based, and competitor-focused keywords, paired with real-estate-specific ad copy to filter out non-serious visitors. A high-conversion landing page was implemented with clear value propositions, strong CTAs, localised trust elements, and project-specific offers. We shifted optimisation to “Maximize Conversions,” set up full tracking, and eliminated wasted spend by blocking low-quality regions and devices — ensuring the budget flowed only into high-intent search demand.",
+        "We rebuilt the Google Ads engine from the ground up — segmenting campaigns by high-intent, location, and competitor keywords, refining ad copy to filter out low-intent visitors, and driving traffic to a high-converting landing page with strong CTAs and trust elements. With full tracking, “Maximize Conversions” optimisation, and wasted spend removed, the budget flowed only into genuine high-intent search demand.",
       numbers:
         "Clicks: 10,400 | Impressions: 131,000 | Total Conversions: 844 | Ad Spend: $18,800 | Average CPL: $22.2 (≈60% cheaper than the Dubai market benchmark of $50–$70 per lead)",
       result:
