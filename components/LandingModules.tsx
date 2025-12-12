@@ -411,53 +411,30 @@ export const ValueStack: React.FC = () => {
 export const ProofSection: React.FC = () => {
   const proofs = [
     {
-      title: 'How We Turned "Cold Leads" into 6,000+ Confirmed Appointments',
+      title:
+        "How We Generated 2,700+ High-Intent Enquiries at a ₹39 CPL for a Real Estate Developer",
       problem:
-        'Most agencies deliver "leads"—names and numbers of people who never pick up the phone. The clinic’s front desk was burning out chasing ghosts, and the "Show Rate" was dismal.',
+        "The developer was struggling with rising enquiry costs, low-quality leads from generic targeting, and no predictable system for driving site-visit bookings. Their campaigns were scattered, inconsistent, and lacked a clear funnel.",
       mechanism:
-        "We stopped sending traffic to a slow website. Instead, we implemented an In-App Native Booking System. By reducing friction and allowing users to lock in their slot directly on Instagram/Facebook, we captured intent at its peak.",
+        "We rebuilt their performance engine using a 3-layer Meta funnel. Broad + interest prospecting helped identify strong audience pockets, a hyper-local Deepavali campaign captured location-driven demand, and a remarketing layer re-engaged warm users across website and landing-page visits. This structure created a clean, intent-driven pipeline instead of random traffic.",
       numbers:
-        "Total Appointments: 6,800+ (Verified Bookings) | Conversion Rate: ~6% - 18% (Click to Appointment)",
+        "Total Leads: 2,744 | Blended CPL: ₹39.59 | Total Spend: ₹108,636.76 (12 Nov 2022 – 12 Dec 2025) | Reach: 637,213 | Impressions: 1,619,138",
       result:
-        "We effectively automated the front desk. Instead of calling leads to ask for an appointment, the staff only called to confirm the arrival.",
+        "We shifted from unpredictable, expensive leads to a steady flow of high-intent enquiries. With hyper-local targeting and strong remarketing, the sales team received better-qualified prospects and overall acquisition costs dropped dramatically.",
       image: "/case-study-1.jpeg",
     },
     {
       title:
-        "The ₹81 Patient Acquisition Model: High-Ticket Customers for the Price of a Coffee",
+        "How We Generated 844 High-Intent Real Estate Leads Using Google Ads",
       problem:
-        "The client was in a saturated metro city. CPCs (Cost Per Click) were rising, and competitors were bleeding money. They needed a way to acquire patients cheaper without sacrificing quality.",
+        "The developer’s Google Ads setup was driving high traffic but almost no conversions. Campaigns lacked keyword segmentation, attracted unqualified enquiries, and pushed no warm traffic toward conversion. With rising costs and no reliable acquisition system, the sales team was overwhelmed with low-intent leads.",
       mechanism:
-        'We deployed our proprietary "Yin-Yang" Campaign Structure. Yang (Prospecting) for broad targeting to fill the funnel, and Yin (Remarketing) for aggressive retargeting of "warm" users with social proof and "before/after" results.',
-      numbers: "Cost Per Lead: ₹81.97 | Total Leads: 401 | ROI: >47X ROAS",
+        "We rebuilt the entire Google Ads engine from scratch. Campaigns were segmented into high-intent, location-based, and competitor-focused keywords, paired with real-estate-specific ad copy to filter out non-serious visitors. A high-conversion landing page was implemented with clear value propositions, strong CTAs, localised trust elements, and project-specific offers. We shifted optimisation to “Maximize Conversions,” set up full tracking, and eliminated wasted spend by blocking low-quality regions and devices — ensuring the budget flowed only into high-intent search demand.",
+      numbers:
+        "Clicks: 10,400 | Impressions: 131,000 | Total Conversions: 844 | Ad Spend: $18,800 | Average CPL: $22.2 (≈60% cheaper than the Dubai market benchmark of $50–$70 per lead)",
       result:
-        "Lowest acquisition cost in the clinic's history, allowing them to reinvest profit into new machines.",
+        "The sales team received only qualified inquiries — people actively seeking site visits, project details, or investment opportunities. The landing page alone improved contact-to-conversion from 3% to 14%.",
       image: "/case-study-2.jpeg",
-    },
-    {
-      title: '844 Conversions at Scale: Dominating the "Bottom of the Funnel."',
-      problem:
-        'Social media creates demand, but Search captures it. The client was losing market share to competitors who appeared first when users searched for specific treatments (e.g., "Best Laser Hair Removal," "Botox Cost").',
-      mechanism:
-        'We utilized Single Keyword Ad Groups (SKAGs) to ensure hyper-relevance. When a user searched for a specific problem, they saw an ad only for that solution—not a generic homepage. We optimized for "Conversions" (Booked Consultations), not just Clicks.',
-      numbers:
-        "Total Conversions: 844 (High Intent) | Spend: $18.8K | CPA: ~$22",
-      result:
-        'A predictable stream of "Ready-to-Buy" patients who required very little convincing from the sales team.',
-      image: "/case-study-3.jpeg",
-    },
-    {
-      title:
-        "Spending ₹1.6 Lakhs profitably to Generate a ₹10 Lakh+ Pipeline in 30 Days.",
-      problem:
-        "The clinic needed volume fast. They had just expanded their team and empty rooms meant lost revenue. They needed to scale spend without the Cost Per Result skyrocketing.",
-      mechanism:
-        "We used Dynamic Creative Testing (AB Testing) to identify the winning creative within 48 hours. Once identified, we uncapped the budget using CBO (Campaign Budget Optimization), allowing Facebook's AI to find the buyers.",
-      numbers:
-        "Leads Generated: 504 | Cost Per Lead: ~₹218 | CTR: 0.98% - 1.86%",
-      result:
-        "The clinic filled their new branch's capacity within the first month of operations.",
-      image: "/case-study-4.jpeg",
     },
   ];
 
